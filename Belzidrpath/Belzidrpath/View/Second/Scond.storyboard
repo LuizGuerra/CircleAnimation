@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EJL-af-VjH">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-SemiBoldItalic.ttf">
+            <string>SourceSansPro-SemiBoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="PTV-C1-Y4j">
+            <objects>
+                <viewController id="EJL-af-VjH" customClass="SecondViewController" customModule="Belzidrpath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZDe-9D-6mz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jEY-s2-pzX">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cel" id="G9c-dy-CpW" customClass="TableCell" customModule="Belzidrpath" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G9c-dy-CpW" id="Txt-a6-R1w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-9w-kAg">
+                                                    <rect key="frame" x="100" y="11" width="294" height="22"/>
+                                                    <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="16"/>
+                                                    <color key="textColor" name="ModerateCyan"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fNk-9w-kAg" firstAttribute="trailing" secondItem="Txt-a6-R1w" secondAttribute="trailingMargin" id="BtX-gF-OSf"/>
+                                                <constraint firstItem="fNk-9w-kAg" firstAttribute="top" secondItem="Txt-a6-R1w" secondAttribute="topMargin" id="Mv3-KI-30G"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fNk-9w-kAg" secondAttribute="bottom" id="e4P-EX-yyu"/>
+                                                <constraint firstItem="fNk-9w-kAg" firstAttribute="leading" secondItem="Txt-a6-R1w" secondAttribute="leadingMargin" constant="80" id="yy0-i8-hpl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="fNk-9w-kAg" id="1BU-VF-bXD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="writing-logo" translatesAutoresizingMaskIntoConstraints="NO" id="zKP-ja-srA">
+                                <rect key="frame" x="48" y="44" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anotations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYZ-Pa-bbs">
+                                <rect key="frame" x="152" y="47" width="110" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezF-j6-ppX">
+                                <rect key="frame" x="319" y="47" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" name="ModerateCyan"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="EJL-af-VjH" eventType="valueChanged" id="ANM-Ao-xJZ"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jEY-s2-pzX" firstAttribute="bottom" secondItem="tGy-eU-NHY" secondAttribute="bottom" id="239-OV-joY"/>
+                            <constraint firstItem="jEY-s2-pzX" firstAttribute="trailing" secondItem="tGy-eU-NHY" secondAttribute="trailing" id="SIH-PT-CHY"/>
+                            <constraint firstItem="jEY-s2-pzX" firstAttribute="top" secondItem="tGy-eU-NHY" secondAttribute="top" constant="48" id="Zph-0K-BBR"/>
+                            <constraint firstItem="jEY-s2-pzX" firstAttribute="leading" secondItem="tGy-eU-NHY" secondAttribute="leading" id="nc6-uU-8Mf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tGy-eU-NHY"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="zKP-ja-srA" id="FTo-Ps-FX4"/>
+                        <outlet property="tableView" destination="jEY-s2-pzX" id="YId-rA-9ca"/>
+                        <outlet property="titleLabel" destination="zYZ-Pa-bbs" id="vxV-8E-8QR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Su-dm-PBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="writing-logo" width="512" height="512"/>
+        <namedColor name="ModerateCyan">
+            <color red="0.40000000596046448" green="0.74500000476837158" blue="0.69800001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
